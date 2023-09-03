@@ -1,12 +1,43 @@
 {
   "name": "clutchjs",
-  "version": "1.0.0",
+  "version": "1.0.7",
   "description": "A just-in-time automated package that increases preformance standards by a large metric.",
-  "main": "clutch.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/index.js",
+    "test": "jest",
+    "lint": "eslint ./src",
+    "posttest": "npm run lint",
+    "prestart": "npm run lint && npm test"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/klenovich/clutchjs"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/klenovich/clutchjs/issues"
+  },
+  "homepage": "https://github.com/klenovich/clutchjs",
+  "keywords": [
+    "performance",
+    "enhancement",
+    "node.js"
+  ],
+  "dependencies": {
+    "express": "^4.17.1",
+    "winston": "^3.3.3",
+    "dotenv": "^10.0.0"
+  },
+  "devDependencies": {
+    "jest": "^27.3.1",
+    "supertest": "^6.1.6",
+    "eslint": "^8.5.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.25.3"
+  }
 }
