@@ -1,4 +1,21 @@
-// multi-threading.js
+/*
+
+╋╋╋┏┓╋╋╋┏┓╋╋╋┏┓
+╋╋╋┃┃╋╋┏┛┗┓╋╋┃┃╋╋┏┓
+┏━━┫┃┏┓┣┓┏╋━━┫┗━┓┗╋━━┓
+┃┏━┫┃┃┃┃┃┃┃┏━┫┏┓┃┏┫━━┫
+┃┗━┫┗┫┗┛┃┗┫┗━┫┃┃┣┫┣━━┃
+┗━━┻━┻━━┻━┻━━┻┛┗┻┫┣━━┛
+╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋┏┛┃
+╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋┗━┛
+
+clutch.js
+---
+github.com/klenovich/clutchjs
+---
+A just-in-time automated package that increases preformance standards by a large metric.
+
+*/
 
 const { isMainThread, parentPort, workerData, threadId, Worker } = require('worker_threads');
 

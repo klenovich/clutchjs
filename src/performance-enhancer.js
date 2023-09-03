@@ -1,3 +1,22 @@
+/*
+
+╋╋╋┏┓╋╋╋┏┓╋╋╋┏┓
+╋╋╋┃┃╋╋┏┛┗┓╋╋┃┃╋╋┏┓
+┏━━┫┃┏┓┣┓┏╋━━┫┗━┓┗╋━━┓
+┃┏━┫┃┃┃┃┃┃┃┏━┫┏┓┃┏┫━━┫
+┃┗━┫┗┫┗┛┃┗┫┗━┫┃┃┣┫┣━━┃
+┗━━┻━┻━━┻━┻━━┻┛┗┻┫┣━━┛
+╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋┏┛┃
+╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋┗━┛
+
+clutch.js
+---
+github.com/klenovich/clutchjs
+---
+A just-in-time automated package that increases preformance standards by a large metric.
+
+*/
+
 const crypto = require('crypto');
 const cluster = require('cluster');
 const os = require('os');

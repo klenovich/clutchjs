@@ -1,4 +1,23 @@
-priorityQueue.const priorityQueue = require('./priorityQueue');
+/*
+
+╋╋╋┏┓╋╋╋┏┓╋╋╋┏┓
+╋╋╋┃┃╋╋┏┛┗┓╋╋┃┃╋╋┏┓
+┏━━┫┃┏┓┣┓┏╋━━┫┗━┓┗╋━━┓
+┃┏━┫┃┃┃┃┃┃┃┏━┫┏┓┃┏┫━━┫
+┃┗━┫┗┫┗┛┃┗┫┗━┫┃┃┣┫┣━━┃
+┗━━┻━┻━━┻━┻━━┻┛┗┻┫┣━━┛
+╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋┏┛┃
+╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋┗━┛
+
+clutch.js
+---
+github.com/klenovich/clutchjs
+---
+A just-in-time automated package that increases preformance standards by a large metric.
+
+*/
+
+const priorityQueue = require('./priorityQueue');
 
 class Scheduler {
   constructor() {

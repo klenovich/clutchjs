@@ -1,4 +1,21 @@
-// compression.js
+/*
+
+╋╋╋┏┓╋╋╋┏┓╋╋╋┏┓
+╋╋╋┃┃╋╋┏┛┗┓╋╋┃┃╋╋┏┓
+┏━━┫┃┏┓┣┓┏╋━━┫┗━┓┗╋━━┓
+┃┏━┫┃┃┃┃┃┃┃┏━┫┏┓┃┏┫━━┫
+┃┗━┫┗┫┗┛┃┗┫┗━┫┃┃┣┫┣━━┃
+┗━━┻━┻━━┻━┻━━┻┛┗┻┫┣━━┛
+╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋┏┛┃
+╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋┗━┛
+
+clutch.js
+---
+github.com/klenovich/clutchjs
+---
+A just-in-time automated package that increases preformance standards by a large metric.
+
+*/
 
 const zlib = require('zlib');
 const fs = require('fs');

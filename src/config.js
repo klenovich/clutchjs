@@ -1,4 +1,22 @@
-// config.js
+/*
+
+╋╋╋┏┓╋╋╋┏┓╋╋╋┏┓
+╋╋╋┃┃╋╋┏┛┗┓╋╋┃┃╋╋┏┓
+┏━━┫┃┏┓┣┓┏╋━━┫┗━┓┗╋━━┓
+┃┏━┫┃┃┃┃┃┃┃┏━┫┏┓┃┏┫━━┫
+┃┗━┫┗┫┗┛┃┗┫┗━┫┃┃┣┫┣━━┃
+┗━━┻━┻━━┻━┻━━┻┛┗┻┫┣━━┛
+╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋┏┛┃
+╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋┗━┛
+
+clutch.js
+---
+github.com/klenovich/clutchjs
+---
+A just-in-time automated package that increases preformance standards by a large metric.
+
+*/
+
 require('dotenv').config();
 
 const config = {

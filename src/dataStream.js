@@ -1,3 +1,22 @@
+/*
+
+╋╋╋┏┓╋╋╋┏┓╋╋╋┏┓
+╋╋╋┃┃╋╋┏┛┗┓╋╋┃┃╋╋┏┓
+┏━━┫┃┏┓┣┓┏╋━━┫┗━┓┗╋━━┓
+┃┏━┫┃┃┃┃┃┃┃┏━┫┏┓┃┏┫━━┫
+┃┗━┫┗┫┗┛┃┗┫┗━┫┃┃┣┫┣━━┃
+┗━━┻━┻━━┻━┻━━┻┛┗┻┫┣━━┛
+╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋┏┛┃
+╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋┗━┛
+
+clutch.js
+---
+github.com/klenovich/clutchjs
+---
+A just-in-time automated package that increases preformance standards by a large metric.
+
+*/
+
 const fs = require('fs');
 const { Transform } = require('stream');
 
@@ -14,7 +33,6 @@ const writeStream = fs.createWriteStream('./outputData.txt');
 readStream.pipe(transformStream).pipe(writeStream);
 
 // Respond once the operation completes
-writeStream.on('finish', () => process.stdout.write('Data Transformed!
-'));
+writeStream.on('finish', () => process.stdout.write('Data Transformed!'));
 
 module.exports = transformStream;
