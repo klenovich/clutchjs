@@ -40,11 +40,15 @@ Install Clutch.js as a development dependency with the following command:
 
 ```bash
 npm install --save-dev clutchjs
+```
 
 ## 📚 Usage
 Integrate Clutch.js into your project by using the following import statement:
 
+```bash
 const clutch = require('clutch.js');
+```
+
 More usage details can be found in the Documentation section.
 
 ## 👥 Contributing
@@ -53,7 +57,9 @@ We welcome any contributions to Clutch.js! For information on how to contribute,
 ## 🧪 Testing
 Run the following command to execute the pre-written tests:
 
+```bash
 npm run test
+```
 
 ## 🚄 Performance Enhancement
 Learn more about how Clutch.js enhances performance through advanced techniques such as memoization, data compression, and multi-threading in the Performance Enhancement documentation.
