@@ -61,6 +61,103 @@ Run the following command to execute the pre-written tests:
 npm run test
 ```
 
+## Documentation
+
+```javascript
+const Clutch = require('clutch.js');
+```
+
+A sample function to demonstrate memoization
+```javascript
+const expensiveCalculation = (num) => {
+    // hypothetically expensive calculations...
+    return num * num;
+}
+```
+
+Create a memoized version of the function
+```javascript
+const memoizedExpensiveCalculation = Clutch.memoize(expensiveCalculation);
+
+// The initial call calculates and caches the result
+console.log(memoizedExpensiveCalculation(5)); // Calculation performed
+
+// Subsequent calls with the same parameter will use the cached result
+console.log(memoizedExpensiveCalculation(5)); // Result retrieved from cache
+```
+
+Multithreading: Start new thread
+```javascript
+const myThread = new Clutch.Thread(() => {
+  // ... long running task ...
+});
+```
+
+Start the thread.
+```javascript
+myThread.start();
+```
+
+## 🔗 Integrating Clutch.js With Other Libraries
+
+### Express.js and Clutch.js Integration Example
+
+`Clutch.js` can be effectively used with `Express.js` to create multi-threaded servers for highly concurrent applications. Here are some basic steps to integrate these libraries:
+
+Install Express.js and Clutch.js using npm, if they aren't already installed:
+
+```bash
+npm install express clutch.js
+```
+
+Then, use Clutch.js in your Express.js server like this:
+
+```javascript
+const express = require('express');
+const Clutch = require('clutch.js');
+const app = express();
+
+app.get('/', (req, res) => {
+    const myThread = new Clutch.Thread(() => {
+        // ...your complex operations...
+    });
+    
+    myThread.start();
+
+    res.send('Processing');
+});
+
+app.listen(3000, () => console.log('Server running on port 3000'));
+```
+
+In this example, Clutch.js is used to perform complex operations in a new thread for every incoming request, ensuring that the main thread isn't blocked and your server can accept more incoming connections while processing.
+
+### MongoDB and Clutch.js Integration Example
+Clutch.js can also be integrated with MongoDB to perform operations asynchronously. Here's how you can achieve this:
+
+First, install MongoDB driver and Clutch.js using npm:
+
+```bash
+npm install mongodb clutch.js
+```
+
+Then, use Clutch.js in your MongoDB data processing tasks:
+
+```javascript
+const MongoClient = require('mongodb').MongoClient;
+const Clutch = require('clutch.js');
+
+MongoClient.connect('mongodb://localhost:27017/mydatabase', function(err, db) {
+    const myThread = new Clutch.Thread(() => {
+        // ...your MongoDB operations...
+    });
+    
+    myThread.start();
+});
+```
+
+In this example, Clutch.js is used to process MongoDB operations in a new thread, ensuring that the main thread isn't blocked and your application remains responsive to other tasks.
+
 ## 🚄 Performance Enhancement
 Learn more about how Clutch.js enhances performance through advanced techniques such as memoization, data compression, and multi-threading in the Performance Enhancement documentation.
 
