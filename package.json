@@ -1,6 +1,6 @@
 {
   "name": "clutchjs",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "A just-in-time automated package that increases preformance standards by a large metric.",
   "main": "src/index.js",
   "scripts": {
